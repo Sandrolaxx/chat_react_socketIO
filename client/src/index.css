@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgb(29, 82, 161),rgb(3, 221, 210));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.form {
+  background-color: #027c7c;
+  padding: 1rem;
+  border-top: 2px solid #02b15a;
+}
+
+/* Utilizando a metodologia BEM significa Block__Element--Modifier */
+
+.form__field {
+  background: #004731;
+  border: 2px solid #02b15a;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+.form__field:focus {
+  border-color: #11B9C9;
+  box-shadow: 0 0 7px #11B9C9;
+  outline: none;
+}
+
+.list {
+  margin: 0;
+  padding: 1rem;
+}
+
+.list__item {
+  list-style: none;
+}
+
+.list__item.list__item--mine {
+  text-align: right;
+}
+
+.message {
+  border: 2px solid transparent;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 1rem;
+  padding: 15px 30px;
+  color: #FFF;
+}
+
+.message.message--mine {
+  background: rgb(143, 36, 125);
+  border-color: #e748c5;
+  text-align: right;
+}
+
+.message.message--other {
+  background: #115069;
+  border-color: #1ABEFF;
+}
