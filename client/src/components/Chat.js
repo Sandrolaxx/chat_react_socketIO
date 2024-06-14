@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
-import uuid from 'uuid/dist/v4';
+import { v4 as uuidv4 } from 'uuid';
 
-const myId = uuid();
+const myId = uuidv4();
 const socket = io("http://127.0.0.1:4747", { transports: ["websocket"] }); 
 socket.on('connect', () => console.log('[IO] Connected 😁⚡'));
 
